@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="row">
+            <div class="font-size-scroll-component">
+                <div class="font-size-scroll-title">Make font bigger</div>
+                <div class="scroll-text">
+                    <div class="scroll-small-text">Aa</div>
+                    <div class="scroll-big-text">Aa</div>
+                </div>
+                <div class="font-size-scroll">
+                    <span class="minus">-</span>
+                    <div id="fontSizeScroller" class="font-size-scroller"></div>
+                    <span class="plus">+</span>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="dateprice-header">
+                            <div class="dateprice-header-year">2020</div>
+                            <h1 class="dateprice-header-title">Ultimate Africa</h1>
+                            <div class="dateprice-header-sub-title">Botswana, Zambia & Zimbabwe Safari </div>
+                            <p class="dateprice-header-description">Find the right departure date for your adventure. Select the month you’d like to travel, plan
+                                your trip and call to book it.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="build-trip">
+                            <div class="build-trip-title">Build your trip</div>
+                            <div class="build-trip-nav">
+                                <div class="build-trip-line"></div>
+                                <div class="build-trip-step active first">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> 1
+                                    <span class="title">Choose Date</span>
+                                </div>
+                                <div class="build-trip-step second">
+                                    <i class="fa fa-plus" aria-hidden="true"></i> 2
+                                    <span class="title">Choose Personalization</span>
+                                </div>
+                                <div class="build-trip-step third">
+                                    <i class="fa fa-globe" aria-hidden="true"></i> 3
+                                    <span class="title">Trip Summary</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="assistance">
+                            <p>For assistance
+                                <span>Call 1-800-955-1925</span>
+                            </p>
+                            <button class="btn btn-light dateprice-btn">Or schedule a call now</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+    <div class="select-trip-component">
+        <div class="row">
+            <div class="col-12">
+                <div class="select-trip-header">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="select-trip-header-title">Select month:</div>
+                            <div class="dateprice-dropdown">all months
+                                <i class="fa fa-lg fa-sort-desc" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="select-trip-header-title">Prices</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="select-trip-header-title">Trip update</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-trip-month-row open">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="select-trip-month-title">
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>January</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="select-trip-prices-title ">Starts at
+                                <span class="bold">$5,395</span> per person
+                                <div class="per-day-price">$317/day</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="select-trip-additional-info ">
+                                <div class="additional-info-item">
+                                    <div class="additional-info-item-icon">
+                                        <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="additional-info-item-content">25 Single spaces left
+                                        <span>Call now to reserve your space</span>
+                                    </div>
+                                </div>
+                                <div class="additional-info-item">
+                                    <div class="additional-info-item-icon">
+                                        <span class="fa-stack ">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </div>
+                                    <div class="additional-info-item-content">
+                                        Women only departure 9/23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-trip-date-row">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="select-trip-date-title">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <div class="content">
+                                        <span class="year">2020</span> January 4-10
+                                        <span class="days">17 days</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="col-2">
+                                <div class="select-trip-date-prices-title">
+                                    <div class="content"> Base price + airfare
+                                        <span class="bold">$5,395</span> per person</div>
+                                    <div class="per-day-price">$317/day</div>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="select-trip-additional-info">
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-build-trip">Build trip</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-trip-date-row">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="select-trip-date-title">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <div class="content">
+                                        <span class="year">2020</span> January 4-10
+                                        <span class="days">17 days</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="col-2">
+                                <div class="select-trip-date-prices-title">
+                                    <div class="content"> Base price + airfare
+                                        <span class="bold">$5,395</span> per person</div>
+                                    <div class="per-day-price">$317/day</div>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="select-trip-additional-info">
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-build-trip">Build trip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-trip-month-row">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="select-trip-month-title">
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>February</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="select-trip-prices-title">Starts at
+                                <span class="bold">$5,395</span> per person
+                                <div class="per-day-price">$317/day</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="select-trip-additional-info">
+                                <div class="additional-info-item">
+                                    <div class="additional-info-item-icon">
+                                        <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="additional-info-item-content">25 Single spaces left
+                                        <span>Call now to reserve your space</span>
+                                    </div>
+                                </div>
+                                <div class="additional-info-item">
+                                    <div class="additional-info-item-icon">
+                                        <span class="fa-stack ">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </div>
+                                    <div class="additional-info-item-content">
+                                        Women only departure 9/23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-trip-date-row ">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="select-trip-date-title">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <div class="content">
+                                        <span class="year">2020</span> February 4-10
+                                        <span class="days">17 days</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="col-2">
+                                <div class="select-trip-date-prices-title">
+                                    <div class="content"> Base price + airfare
+                                        <span class="bold">$5,395</span> per person</div>
+                                    <div class="per-day-price">$317/day</div>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="select-trip-additional-info">
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                    <div class="additional-info-item">
+                                        <div class="additional-info-item-icon">
+                                            <i class="fa fa-2x fa-exclamation-triangle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="additional-info-item-content">25 Single spaces left
+                                            <span>Call now to reserve your space</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-build-trip">Build trip</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <div class="row">
+                <div class="col-12">
+                    <div class="dateprice-footer clearfix">
+                        <div class="dateprice-footer-left">
+                            <button class="btn dateprice-btn large">Back to product page</button>
+                        </div>
+                        <div class="dateprice-footer-right"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/utility.js" type="text/javascript"></script>
+
+</body>
+
+</html>

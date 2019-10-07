@@ -1,0 +1,178 @@
+.select-trip-component {
+    font-family: Helvetica;
+}
+
+//select trip header
+.select-trip-header {
+    padding: 0 0 12px 0;
+    border-bottom: 1px solid #979797;
+}
+
+.select-trip-header-title {
+    font-size: 18px;
+}
+
+.dateprice-dropdown {
+    .fa {
+        vertical-align: top;
+        margin-left: 3px;
+    }
+}
+
+//select trip month row
+.select-trip-month-row {
+    padding: 20px 0;
+    border-bottom: 1px solid #979797;
+    >.row {
+        display: flex;
+        align-items: center;
+    }
+    &.open {
+        padding-top: 10px;
+        .select-trip-month-title .fa {
+            transform: rotate(180deg);
+            padding: 0 0 7px 25px;
+        }
+        .select-trip-date-row {
+            display: block;
+            .select-trip-additional-info {
+                display: flex;
+            }
+        }
+        .select-trip-prices-title {
+            display: none;
+        }
+        .select-trip-additional-info {
+            display: none;
+        }
+    }
+}
+
+.select-trip-month-title {
+    font-size: 36px;
+    font-weight: bold;
+    .fa {
+        color: #BBBDBF;
+        font-size: 25px;
+        vertical-align: top;
+        padding: 7px 25px 0 0;
+    }
+}
+
+.select-trip-prices-title {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 50px;
+    span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.per-day-price {
+    border: 1px solid #979797;
+    padding: 7px 4px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 12px;
+}
+
+.select-trip-additional-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.additional-info-item {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 40px 10px 0;
+}
+
+.additional-info-item-icon {
+    .fa-exclamation-triangle {
+        font-size: 22px;
+    }
+}
+
+.additional-info-item-content {
+    color: #413F3F;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 7px;
+    line-height: 18px;
+    span {
+        display: block;
+        color: #413F3F;
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+
+.select-trip-date-row {
+    display: none;
+    border: 1px solid #979797;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+    padding: 20px 0;
+    margin: 10px 0 10px 60px;
+    line-height: 20px;
+    >.row {
+        display: flex;
+        align-items: center;
+        >.divider{
+            left: -17px;
+        }
+    }
+    
+}
+
+.select-trip-date-title {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    i {
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+    .year {
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
+    }
+    .days {
+        font-size: 14px;
+        font-weight: 300;
+        display: block;
+    }
+}
+
+.select-trip-date-prices-title {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    span {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .content {
+        max-width: 75px;
+        margin-right: 12px;
+    }
+    
+}
+
+.btn-build-trip {
+    height: 40px;
+    width: 145px;
+    border-radius: 3px;
+    background-color: #413F3F;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+}
