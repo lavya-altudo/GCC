@@ -2,7 +2,7 @@
 $(function () {
   $("#fontSizeScroller").slider();
   //Toggle Month row and collapsing sibling Month rows and there child Date rows
-  $(".js-select-trip-month-title").click(function () {
+  $(".js-view-dates-btn").click(function () {
     $(this).closest(".select-trip-month-row").toggleClass("open").siblings().removeClass('open').children().removeClass('open');
   })
   //Toggle Date row on click anywhere in a row

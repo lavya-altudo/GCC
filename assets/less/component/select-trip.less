@@ -23,11 +23,25 @@
     }
 
     &.open {
-        padding-top: 10px;
 
-        .select-trip-month-title .fa {
-            transform: rotate(180deg);
-            padding: 0 0 7px 25px;
+        .view-dates-btn {
+            .content-close {
+                display: inline-block;
+            }
+
+            .content-open {
+                display: none;
+            }
+
+            .fa {
+                transform: rotate(180deg);
+            }
+        }
+
+        >.row {
+            border-bottom: 1px solid #979797;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
 
         .select-trip-date-row {
@@ -114,10 +128,14 @@
     }
 }
 
+.view-dates-btn {
+    padding: 9px 12px;
+}
+
 .select-trip-date-row {
     display: none;
 
-    margin: 10px 0 10px 60px;
+    margin: 10px 0 10px 28px;
     line-height: 20px;
 
     >.row {
@@ -135,17 +153,20 @@
     }
 
     &.open {
-        .view-extension-icon{
-            .content-close{
+        .view-extension-icon {
+            .content-close {
                 display: block;
             }
-            .content-open{
+
+            .content-open {
                 display: none;
             }
+
             .fa {
                 transform: rotate(180deg);
             }
         }
+
         .date-row-detail-box {
             display: flex;
         }
@@ -216,7 +237,7 @@
     align-items: center;
     cursor: pointer;
     font-size: 40px;
-    
+
     .view-extension-icon-wrap {
         margin: 0 auto;
     }
@@ -225,10 +246,8 @@
         font-size: 12px;
         font-weight: bold;
     }
-    .content-close{
-        display: none;
 
-    }
+
 }
 
 .date-row-detail-box {

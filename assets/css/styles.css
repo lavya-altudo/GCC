@@ -6869,6 +6869,9 @@ button.close {
   align-self: normal;
   position: relative;
 }
+.content-close {
+  display: none;
+}
 body {
   font-family: sans-serif;
   font-size: 14px;
@@ -7214,12 +7217,19 @@ input[type="radio"] {
   display: flex;
   align-items: center;
 }
-.select-trip-month-row.open {
-  padding-top: 10px;
+.select-trip-month-row.open .view-dates-btn .content-close {
+  display: inline-block;
 }
-.select-trip-month-row.open .select-trip-month-title .fa {
+.select-trip-month-row.open .view-dates-btn .content-open {
+  display: none;
+}
+.select-trip-month-row.open .view-dates-btn .fa {
   transform: rotate(180deg);
-  padding: 0 0 7px 25px;
+}
+.select-trip-month-row.open > .row {
+  border-bottom: 1px solid #979797;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .select-trip-month-row.open .select-trip-date-row {
   display: block;
@@ -7286,9 +7296,12 @@ input[type="radio"] {
   font-size: 12px;
   font-weight: 300;
 }
+.view-dates-btn {
+  padding: 9px 12px;
+}
 .select-trip-date-row {
   display: none;
-  margin: 10px 0 10px 60px;
+  margin: 10px 0 10px 28px;
   line-height: 20px;
 }
 .select-trip-date-row > .row {
@@ -7377,9 +7390,6 @@ input[type="radio"] {
 .view-extension-icon .content {
   font-size: 12px;
   font-weight: bold;
-}
-.view-extension-icon .content-close {
-  display: none;
 }
 .date-row-detail-box {
   border: 1px solid #979797;
