@@ -37,7 +37,7 @@
                 display: flex;
             }
         }
-        
+
 
         .select-trip-prices-title {
             display: none;
@@ -127,13 +127,26 @@
         border-radius: 5px;
         background-color: #F0F0F0;
         padding: 20px 0;
+        position: relative;
 
         >.divider {
             left: -17px;
         }
     }
-    &.open{
-        .date-row-detail-box{
+
+    &.open {
+        .view-extension-icon{
+            .content-close{
+                display: block;
+            }
+            .content-open{
+                display: none;
+            }
+            .fa {
+                transform: rotate(180deg);
+            }
+        }
+        .date-row-detail-box {
             display: flex;
         }
     }
@@ -145,11 +158,7 @@
     font-weight: bold;
     display: flex;
     align-items: center;
-
-    i {
-        padding-right: 10px;
-        padding-left: 20px;
-    }
+    margin: 0 12px 0 12px;
 
     .year {
         font-size: 14px;
@@ -194,7 +203,35 @@
     display: block;
 }
 
-.date-row-detail-box{
+.view-extension-icon {
+    border-radius: 0 4px 4px 0;
+    background-color: #E0E1E2;
+    text-align: center;
+    color: #BBBDBF;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 9%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+    
+    .view-extension-icon-wrap {
+        margin: 0 auto;
+    }
+
+    .content {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .content-close{
+        display: none;
+
+    }
+}
+
+.date-row-detail-box {
     border: 1px solid #979797;
     border-radius: 2px;
     background-color: #FFFFFF;
@@ -204,14 +241,19 @@
     margin-bottom: 20px;
     flex-flow: wrap;
     justify-content: space-between;
-    .divider{
+
+    .divider {
         margin: 0 20px;
         height: 60px;
         top: 25px;
     }
 }
-.date-row-detail-heading{
-    color: #413F3F;	font-family: "Source Sans Pro";	font-size: 21px;	font-weight: 300;
+
+.date-row-detail-heading {
+    color: #413F3F;
+    font-family: "Source Sans Pro";
+    font-size: 21px;
+    font-weight: 300;
 }
 
 .date-row-detail {
@@ -226,7 +268,8 @@
         align-items: center;
         min-width: 440px;
     }
-    .dateprice-btn{
+
+    .dateprice-btn {
         width: 100%;
     }
 }
@@ -235,6 +278,7 @@
 .date-row-detail-title-container {
     display: flex;
     align-items: center;
+
     img {
         max-width: 60px;
         margin-right: 10px;
@@ -251,7 +295,7 @@
     font-size: 14px;
 }
 
-.required-ext-box{
+.required-ext-box {
     width: 52px;
     height: 53px;
     font-size: 8px;
@@ -263,11 +307,13 @@
     color: #413F3F;
     border: 1px solid #979797;
     margin: 0 auto;
-    i{
+
+    i {
         margin-bottom: 2px;
         color: #BBBDBF;
     }
 }
+
 .date-row-detail-date {
     display: inline-block;
     font-size: 11px;

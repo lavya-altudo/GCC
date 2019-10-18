@@ -104,7 +104,7 @@
                 <div class="select-trip-month-row open">
                     <div class="row">
                         <div class="col-3">
-                            <div class="select-trip-month-title">
+                            <div class="select-trip-month-title js-select-trip-month-title">
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>January</div>
                         </div>
                         <div class="col-3">
@@ -137,11 +137,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="select-trip-date-row">
+                    <div class="select-trip-date-row js-select-trip-date-row">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-2">
                                 <div class="select-trip-date-title">
-                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                     <div class="content">
                                         <span class="year">2020</span> January 4-10
                                         <span class="days">17 days</span>
@@ -195,6 +194,13 @@
                             <div class="col-2">
                                 <button class="btn btn-build-trip">Build trip</button>
                             </div>
+                            <div class="view-extension-icon">
+                                    <div class="view-extension-icon-wrap"><i class="fa fa-chevron-down"
+                                            aria-hidden="true"></i>
+                                        <div class="content"><span class="content-open">View Extensions</span><span
+                                                class="content-close">close</span></div>
+                                    </div>
+                                </div>
                         </div>
                         <div class="date-row-detail-box">
                             <div class="date-row-detail-container">
@@ -282,11 +288,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="select-trip-date-row">
+                    <div class="select-trip-date-row js-select-trip-date-row">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-2">
                                 <div class="select-trip-date-title">
-                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                     <div class="content">
                                         <span class="year">2020</span> January 4-10
                                         <span class="days">17 days</span>
@@ -340,98 +345,106 @@
                             <div class="col-2">
                                 <button class="btn btn-build-trip">Build trip</button>
                             </div>
+                            <div class="view-extension-icon">
+                                    <div class="view-extension-icon-wrap"><i class="fa fa-chevron-down"
+                                            aria-hidden="true"></i>
+                                        <div class="content"><span class="content-open">View Extensions</span><span
+                                                class="content-close">close</span></div>
+                                    </div>
+                                </div>
                         </div>
+
                         <div class="date-row-detail-box">
-                                <div class="date-row-detail-container">
-                                    <div class="date-row-detail-heading">Available pre-trip extensions:</div>
-                                    <div class="date-row-detail">
-                                        <div class="row">
-                                            <div class="col-7">
-                                                <div class="date-row-detail-title-container">
-                                                    <img src="./assets/images/flight_image.jpg" width="60px" alt="">
-                                                    <div class="content">
-                                                        <div class="date-row-detail-title">Flight from EWR</div>
-                                                        <div class="date-row-detail-subtitle">Newark, NJ</div>
-                                                        <div class="date-row-detail-date">4 nights</div>
-                                                    </div>
+                            <div class="date-row-detail-container">
+                                <div class="date-row-detail-heading">Available pre-trip extensions:</div>
+                                <div class="date-row-detail">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="date-row-detail-title-container">
+                                                <img src="./assets/images/flight_image.jpg" width="60px" alt="">
+                                                <div class="content">
+                                                    <div class="date-row-detail-title">Flight from EWR</div>
+                                                    <div class="date-row-detail-subtitle">Newark, NJ</div>
+                                                    <div class="date-row-detail-date">4 nights</div>
                                                 </div>
-                                            </div>
-    
-                                            <div class="col-2">
-                                                <div class="required-ext-box">
-                                                    <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
-                                                    Required extension
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <button class="btn dateprice-btn">View more</button>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="divider"></div>
-                                <div class="date-row-detail-container">
-                                    <div class="date-row-detail-heading">Available post-trip extensions:</div>
-                                    <div class="date-row-detail">
-                                        <div class="row">
-                                            <div class="col-7">
-                                                <div class="date-row-detail-title-container">
-                                                    <img src="./assets/images/flight_image.jpg" width="60px" alt="">
-                                                    <div class="content">
-                                                        <div class="date-row-detail-title">Flight from EWR</div>
-                                                        <div class="date-row-detail-subtitle">Newark, NJ</div>
-                                                        <div class="date-row-detail-date">4 nights</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-2">
-                                                <div class="required-ext-box">
-                                                    <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
-                                                    Required extension
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <button class="btn dateprice-btn">View more</button>
+
+                                        <div class="col-2">
+                                            <div class="required-ext-box">
+                                                <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
+                                                Required extension
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="divider"></div>
-                                <div class="date-row-detail-container">
-                                    <div class="date-row-detail-heading">Available stopovers:</div>
-                                    <div class="date-row-detail">
-                                        <div class="row">
-                                            <div class="col-7">
-                                                <div class="date-row-detail-title-container">
-                                                    <img src="./assets/images/flight_image.jpg" width="60px" alt="">
-                                                    <div class="content">
-                                                        <div class="date-row-detail-title">Flight from EWR</div>
-                                                        <div class="date-row-detail-subtitle">Newark, NJ</div>
-                                                        <div class="date-row-detail-date">4 nights</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-2">
-                                                <div class="required-ext-box">
-                                                    <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
-                                                    Required extension
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <button class="btn dateprice-btn">View more</button>
-                                            </div>
+                                        <div class="col-3">
+                                            <button class="btn dateprice-btn">View more</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="divider"></div>
+                            <div class="date-row-detail-container">
+                                <div class="date-row-detail-heading">Available post-trip extensions:</div>
+                                <div class="date-row-detail">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="date-row-detail-title-container">
+                                                <img src="./assets/images/flight_image.jpg" width="60px" alt="">
+                                                <div class="content">
+                                                    <div class="date-row-detail-title">Flight from EWR</div>
+                                                    <div class="date-row-detail-subtitle">Newark, NJ</div>
+                                                    <div class="date-row-detail-date">4 nights</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <div class="required-ext-box">
+                                                <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
+                                                Required extension
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn dateprice-btn">View more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="date-row-detail-container">
+                                <div class="date-row-detail-heading">Available stopovers:</div>
+                                <div class="date-row-detail">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="date-row-detail-title-container">
+                                                <img src="./assets/images/flight_image.jpg" width="60px" alt="">
+                                                <div class="content">
+                                                    <div class="date-row-detail-title">Flight from EWR</div>
+                                                    <div class="date-row-detail-subtitle">Newark, NJ</div>
+                                                    <div class="date-row-detail-date">4 nights</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <div class="required-ext-box">
+                                                <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
+                                                Required extension
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn dateprice-btn">View more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="select-trip-month-row">
                     <div class="row">
                         <div class="col-3">
-                            <div class="select-trip-month-title">
+                            <div class="select-trip-month-title js-select-trip-month-title">
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>February</div>
                         </div>
                         <div class="col-3">
@@ -464,11 +477,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="select-trip-date-row ">
+                    <div class="select-trip-date-row js-select-trip-date-row ">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-2">
                                 <div class="select-trip-date-title">
-                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                     <div class="content">
                                         <span class="year">2020</span> February 4-10
                                         <span class="days">17 days</span>
@@ -522,92 +534,99 @@
                             <div class="col-2">
                                 <button class="btn btn-build-trip">Build trip</button>
                             </div>
+                            <div class="view-extension-icon">
+                                <div class="view-extension-icon-wrap"><i class="fa fa-chevron-down"
+                                        aria-hidden="true"></i>
+                                    <div class="content"><span class="content-open">View Extensions</span><span
+                                            class="content-close">close</span></div>
+                                </div>
+                            </div>
                         </div>
                         <div class="date-row-detail-box">
-                                <div class="date-row-detail-container">
-                                    <div class="date-row-detail-heading">Available pre-trip extensions:</div>
-                                    <div class="date-row-detail">
-                                        <div class="row">
-                                            <div class="col-7">
-                                                <div class="date-row-detail-title-container">
-                                                    <img src="./assets/images/flight_image.jpg" width="60px" alt="">
-                                                    <div class="content">
-                                                        <div class="date-row-detail-title">Flight from EWR</div>
-                                                        <div class="date-row-detail-subtitle">Newark, NJ</div>
-                                                        <div class="date-row-detail-date">4 nights</div>
-                                                    </div>
+                            <div class="date-row-detail-container">
+                                <div class="date-row-detail-heading">Available pre-trip extensions:</div>
+                                <div class="date-row-detail">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="date-row-detail-title-container">
+                                                <img src="./assets/images/flight_image.jpg" width="60px" alt="">
+                                                <div class="content">
+                                                    <div class="date-row-detail-title">Flight from EWR</div>
+                                                    <div class="date-row-detail-subtitle">Newark, NJ</div>
+                                                    <div class="date-row-detail-date">4 nights</div>
                                                 </div>
-                                            </div>
-    
-                                            <div class="col-2">
-                                                <div class="required-ext-box">
-                                                    <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
-                                                    Required extension
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <button class="btn dateprice-btn">View more</button>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="divider"></div>
-                                <div class="date-row-detail-container">
-                                    <div class="date-row-detail-heading">Available post-trip extensions:</div>
-                                    <div class="date-row-detail">
-                                        <div class="row">
-                                            <div class="col-7">
-                                                <div class="date-row-detail-title-container">
-                                                    <img src="./assets/images/flight_image.jpg" width="60px" alt="">
-                                                    <div class="content">
-                                                        <div class="date-row-detail-title">Flight from EWR</div>
-                                                        <div class="date-row-detail-subtitle">Newark, NJ</div>
-                                                        <div class="date-row-detail-date">4 nights</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-2">
-                                                <div class="required-ext-box">
-                                                    <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
-                                                    Required extension
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <button class="btn dateprice-btn">View more</button>
+
+                                        <div class="col-2">
+                                            <div class="required-ext-box">
+                                                <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
+                                                Required extension
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="divider"></div>
-                                <div class="date-row-detail-container">
-                                    <div class="date-row-detail-heading">Available stopovers:</div>
-                                    <div class="date-row-detail">
-                                        <div class="row">
-                                            <div class="col-7">
-                                                <div class="date-row-detail-title-container">
-                                                    <img src="./assets/images/flight_image.jpg" width="60px" alt="">
-                                                    <div class="content">
-                                                        <div class="date-row-detail-title">Flight from EWR</div>
-                                                        <div class="date-row-detail-subtitle">Newark, NJ</div>
-                                                        <div class="date-row-detail-date">4 nights</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-2">
-                                                <div class="required-ext-box">
-                                                    <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
-                                                    Required extension
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <button class="btn dateprice-btn">View more</button>
-                                            </div>
+                                        <div class="col-3">
+                                            <button class="btn dateprice-btn">View more</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="divider"></div>
+                            <div class="date-row-detail-container">
+                                <div class="date-row-detail-heading">Available post-trip extensions:</div>
+                                <div class="date-row-detail">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="date-row-detail-title-container">
+                                                <img src="./assets/images/flight_image.jpg" width="60px" alt="">
+                                                <div class="content">
+                                                    <div class="date-row-detail-title">Flight from EWR</div>
+                                                    <div class="date-row-detail-subtitle">Newark, NJ</div>
+                                                    <div class="date-row-detail-date">4 nights</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <div class="required-ext-box">
+                                                <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
+                                                Required extension
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn dateprice-btn">View more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="date-row-detail-container">
+                                <div class="date-row-detail-heading">Available stopovers:</div>
+                                <div class="date-row-detail">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="date-row-detail-title-container">
+                                                <img src="./assets/images/flight_image.jpg" width="60px" alt="">
+                                                <div class="content">
+                                                    <div class="date-row-detail-title">Flight from EWR</div>
+                                                    <div class="date-row-detail-subtitle">Newark, NJ</div>
+                                                    <div class="date-row-detail-date">4 nights</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <div class="required-ext-box">
+                                                <i class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></i>
+                                                Required extension
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn dateprice-btn">View more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

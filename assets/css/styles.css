@@ -7298,9 +7298,19 @@ input[type="radio"] {
   border-radius: 5px;
   background-color: #F0F0F0;
   padding: 20px 0;
+  position: relative;
 }
 .select-trip-date-row > .row > .divider {
   left: -17px;
+}
+.select-trip-date-row.open .view-extension-icon .content-close {
+  display: block;
+}
+.select-trip-date-row.open .view-extension-icon .content-open {
+  display: none;
+}
+.select-trip-date-row.open .view-extension-icon .fa {
+  transform: rotate(180deg);
 }
 .select-trip-date-row.open .date-row-detail-box {
   display: flex;
@@ -7310,10 +7320,7 @@ input[type="radio"] {
   font-weight: bold;
   display: flex;
   align-items: center;
-}
-.select-trip-date-title i {
-  padding-right: 10px;
-  padding-left: 20px;
+  margin: 0 12px 0 12px;
 }
 .select-trip-date-title .year {
   font-size: 14px;
@@ -7349,6 +7356,30 @@ input[type="radio"] {
   color: #fff;
   margin: 0 auto;
   display: block;
+}
+.view-extension-icon {
+  border-radius: 0 4px 4px 0;
+  background-color: #E0E1E2;
+  text-align: center;
+  color: #BBBDBF;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 9%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 40px;
+}
+.view-extension-icon .view-extension-icon-wrap {
+  margin: 0 auto;
+}
+.view-extension-icon .content {
+  font-size: 12px;
+  font-weight: bold;
+}
+.view-extension-icon .content-close {
+  display: none;
 }
 .date-row-detail-box {
   border: 1px solid #979797;

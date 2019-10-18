@@ -1,12 +1,18 @@
 
 $(function () {
   $("#fontSizeScroller").slider();
-  $(".select-trip-month-title").click(function () {
-    $(this).closest(".select-trip-month-row").toggleClass("open").siblings().removeClass('open');
+  //Toggle Month row and collapsing sibling Month rows and there child Date rows
+  $(".js-select-trip-month-title").click(function () {
+    $(this).closest(".select-trip-month-row").toggleClass("open").siblings().removeClass('open').children().removeClass('open');
   })
-  $(".select-trip-date-title").click(function () {
-    $(this).closest(".select-trip-date-row").toggleClass("open").siblings().removeClass('open');
+  //Toggle Date row on click anywhere in a row
+  $(".js-select-trip-date-row>.row").click(function () {
+    $(this).closest(".select-trip-date-row").toggleClass("open");
   })
-
+  //Prevent Toggle Date row on btn click inside date row
+  $(".js-select-trip-date-row .btn").click(function(e){
+    e.stopPropagation();
+  })
+  //Initialising custom Jquery select menu for dateprice Dropdown
   $(".dateprice-dropdown select").selectmenu();
 });
