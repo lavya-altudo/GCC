@@ -7971,3 +7971,44 @@ input[type="radio"] {
   color: inherit;
   margin: 0;
 }
+.temporary {
+  background-color: #413F3F;
+}
+.modal-temp {
+  width: 700px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 1;
+}
+.ready-to-reserve {
+  text-align: center;
+  margin: 40px 0;
+}
+.ready-to-reserve-header {
+  color: #413F3F;
+  font-size: 42px;
+  font-weight: bold;
+}
+.ready-to-reserve-info {
+  color: #413F3F;
+  font-size: 24px;
+}
+.ready-to-reserve-info .btn {
+  display: block;
+  margin: 40px auto;
+  border: 2px solid #413F3F;
+  background: #fff;
+  border-radius: 0px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #413F3F;
+  padding: 25px;
+}
+.ready-to-reserve-info i {
+  font-size: 28px;
+  vertical-align: middle;
+}
