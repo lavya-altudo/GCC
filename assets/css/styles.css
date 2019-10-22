@@ -6872,6 +6872,19 @@ button.close {
 .content-close {
   display: none;
 }
+.temporary {
+  background-color: #413F3F;
+}
+.modal-temp {
+  min-width: 700px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 1;
+}
 body {
   font-family: sans-serif;
   font-size: 14px;
@@ -7971,19 +7984,6 @@ input[type="radio"] {
   color: inherit;
   margin: 0;
 }
-.temporary {
-  background-color: #413F3F;
-}
-.modal-temp {
-  width: 700px;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  opacity: 1;
-}
 .ready-to-reserve {
   text-align: center;
   margin: 40px 0;
@@ -8011,4 +8011,103 @@ input[type="radio"] {
 .ready-to-reserve-info i {
   font-size: 28px;
   vertical-align: middle;
+}
+.promo-message {
+  border: 1px solid #979797;
+  font-size: 16px;
+  color: #413F3F;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+  align-items: stretch;
+}
+.promo-message .promo-message-code {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+[class*="promo-message-sec-"] {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promo-message-sec-1 {
+  background-color: #F1F1F2;
+  width: 60%;
+}
+.promo-message-sec-1 .fa-stack {
+  font-size: 15px;
+  vertical-align: middle;
+}
+.promo-message-sec-2 {
+  width: 40%;
+}
+.departing-city-popup {
+  text-align: center;
+  padding: 25px;
+}
+.departing-popup-form {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.departing-popup-title {
+  color: #413F3F;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.departing-popup__input {
+  font-size: 18px;
+  color: #000000;
+  padding: 9px 25px 9px 16px;
+  width: 375px;
+}
+.departing-popup__input::placeholder {
+  color: #BBBDBF;
+}
+.departing-popup__btn {
+  color: #413F3F;
+  display: inline-block;
+  position: relative;
+  left: -25px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.departing-popup-options > a {
+  color: #BBBDBF;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: 20px;
+}
+.departing-popup-dropdown i {
+  vertical-align: 15%;
+}
+.departing-popup-list {
+  margin: 35px;
+  width: 1366px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.departing-popup-list ul,
+.departing-popup-list li {
+  list-style-type: none;
+  padding: 0;
+}
+.departing-list-country {
+  margin: 10px 50px;
+}
+.departing-list-country-title {
+  color: #BBBDBF;
+  font-size: 18px;
+  font-weight: bold;
+}
+.departing-list-state-title {
+  color: #413F3F;
+  font-size: 14px;
+  font-weight: 300;
 }
