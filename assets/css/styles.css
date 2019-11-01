@@ -6863,6 +6863,17 @@ button.close {
   font-size: 16px;
   max-width: 145px;
 }
+a.dateprice-call-btn {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 43px;
+  border: 2px solid #413F3F;
+  display: inline-block;
+  color: #413F3F;
+  text-decoration: none;
+  padding: 15px 20px;
+  margin-top: 10px;
+}
 .divider {
   width: 2px;
   background-color: #979797;
@@ -7625,9 +7636,44 @@ input[type="radio"] {
   margin: 0 auto;
   padding: 7px 80px;
 }
-.personalization-disclaimer {
+.personalization-message {
+  border: 3px solid #413F3F;
+  text-align: center;
   color: #413F3F;
+}
+.personalization-message__info {
+  padding: 30px;
+}
+.personalization-message__info ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.personalization-message__info li {
   font-size: 18px;
+  padding-right: 25px;
+  width: 33%;
+  text-align: left;
+}
+.personalization-message__info li::before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.personalization-message__title {
+  font-size: 36px;
+  font-weight: bold;
+}
+.personalization-message__call {
+  padding: 35px;
+  font-size: 24px;
+  background-color: #D8D8D8;
+}
+.personalization-message__call span {
+  display: block;
 }
 .summary-nav {
   background-color: #F1F1F2;

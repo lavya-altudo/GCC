@@ -13,10 +13,12 @@
     font-size: 18px;
     color: #413F3F;
     margin-bottom: -7px;
+
     span.bold {
         font-weight: bold;
     }
-    a{
+
+    a {
         color: inherit;
         text-decoration: underline;
         font-weight: 700;
@@ -33,10 +35,12 @@
         line-height: 20px;
         display: flex;
         align-items: center;
-        .divider{
+
+        .divider {
             right: 38px;
         }
     }
+
     &.open {
         .personalization-option-title {
             i {
@@ -44,12 +48,14 @@
                 padding: 0 0 7px 12px;
             }
         }
+
         .personalization-option-detail {
             display: block;
         }
     }
-    &.no-detail-section{
-        .personalization-option-title i{
+
+    &.no-detail-section {
+        .personalization-option-title i {
             visibility: hidden;
             opacity: 0;
         }
@@ -59,12 +65,14 @@
 .personalization-option-title {
     display: flex;
     align-items: center;
+
     i {
         color: #BBBDBF;
         font-size: 25px;
         vertical-align: top;
         padding: 7px 12px 0 0;
     }
+
     img {
         max-width: 60px;
         margin-right: 10px;
@@ -96,11 +104,13 @@
     font-size: 14px;
     font-weight: 300;
     position: relative;
+
     span {
         display: block;
         font-size: 24px;
         font-weight: bold;
     }
+
     .content {
         max-width: 75px;
         margin-right: 12px;
@@ -142,6 +152,7 @@
     color: #413F3F;
     font-size: 14px;
     margin: 20px 0;
+
     span.bold {
         font-weight: bold;
     }
@@ -153,7 +164,53 @@
     padding: 7px 80px;
 }
 
-.personalization-disclaimer {
+
+.personalization-message {
+    border: 3px solid #413F3F;
+    text-align: center;
     color: #413F3F;
-    font-size: 18px;
+
+}
+
+.personalization-message__info {
+    padding: 30px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    li {
+        font-size: 18px;
+        padding-right: 25px;
+        width: 33%;
+        text-align: left;
+
+        &::before {
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+}
+
+.personalization-message__title {
+    font-size: 36px;
+    font-weight: bold;
+
+}
+
+.personalization-message__call {
+    padding: 35px;
+    font-size: 24px;
+    background-color: #D8D8D8;
+
+    span {
+        display: block;
+    }
+
 }
