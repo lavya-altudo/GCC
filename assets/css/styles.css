@@ -6876,7 +6876,7 @@ button.close {
   background-color: #413F3F;
 }
 .modal-temp {
-  min-width: 700px;
+  width: 1075px;
   margin: 0 auto;
   position: absolute;
   top: 50%;
@@ -8088,7 +8088,6 @@ input[type="radio"] {
 }
 .departing-popup-list {
   margin: 35px;
-  width: 1366px;
   display: flex;
   flex-wrap: wrap;
   text-align: left;
@@ -8099,7 +8098,8 @@ input[type="radio"] {
   padding: 0;
 }
 .departing-list-country {
-  margin: 10px 50px;
+  padding: 0.5em 3em;
+  width: 25%;
 }
 .departing-list-country-title {
   color: #BBBDBF;
@@ -8110,4 +8110,72 @@ input[type="radio"] {
   color: #413F3F;
   font-size: 14px;
   font-weight: 300;
+}
+.trip-details-popup {
+  padding: 20px 70px;
+}
+.trip-details-popup-header {
+  color: #413F3F;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  margin: 10px 0;
+}
+.trip-details-popup-header .required-ext-box {
+  margin: 0 auto 0 10px;
+}
+.trip-popup-row > .row {
+  background-color: #BBBDBF;
+  padding: 20px 10px;
+}
+.trip-popup-title {
+  color: #000000;
+  font-size: 24px;
+  font-style: oblique;
+  font-weight: 300;
+  line-height: 23px;
+}
+.trip-popup-title span {
+  color: #413F3F;
+  font-size: 22px;
+  display: block;
+}
+.trip-popup-title .year {
+  color: #413F3F;
+  font-size: 16px;
+  font-weight: bold;
+}
+.trip-popup-price {
+  text-align: center;
+  width: max-content;
+  margin: 0 0 0 auto;
+}
+.trip-popup-price .content {
+  color: #413F3F;
+  font-size: 16px;
+}
+.trip-popup-price .content span {
+  display: block;
+}
+.trip-popup-price-days {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  text-align: center;
+  border: 1px solid #979797;
+  background-color: #D8D8D8;
+  margin: 3px auto 0 auto;
+  width: max-content;
+  padding: 1px 10px;
+}
+.trip-popup-row-detail img {
+  width: 100%;
+}
+.trip-popup-description {
+  color: #413F3F;
+  font-size: 18px;
+  margin: 20px 0;
+}
+.btn-learn-more-popup {
+  width: 100%;
 }
