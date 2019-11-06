@@ -7230,21 +7230,49 @@ input[type="radio"] {
   padding: 0 0 12px 0;
   border-bottom: 1px solid #979797;
 }
-.departing-city-filter-left {
+.departing-city-filter__left {
   float: left;
 }
-.departing-city-filter-left .btn {
+.departing-city-filter__left > .btn {
   margin-right: 25px;
 }
-.departing-city-filter-right {
+.departing-city-filter__right {
   float: right;
 }
-.departing-city-filter-right .btn {
+.departing-city-filter__right .btn {
   margin-right: -15px;
   font-weight: 400;
 }
-.departing-city-filter-right i {
+.departing-city-filter__right i {
   vertical-align: middle;
+}
+.trip-filter {
+  position: relative;
+  float: left;
+  margin-right: 25px;
+}
+.trip-filter__box {
+  border: 1px solid #979797;
+  border-radius: 5px;
+  background-color: #D8D8D8;
+  padding: 20px 5px 40px;
+  position: absolute;
+  width: max-content;
+  top: 50px;
+  display: none;
+}
+.trip-filter__box.active {
+  display: block;
+}
+.trip-filter__box-btn {
+  border: 1px solid #979797;
+  border-radius: 4px;
+  background-color: #D8D8D8;
+  color: #413F3F;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin: 0 20px;
 }
 .select-trip-month-row {
   padding: 20px 0;
