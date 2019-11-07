@@ -109,19 +109,25 @@
                         <div class="col-11">
                             <div class="departing-city-filter-row clearfix">
                                 <div class="departing-city-filter__left">
-                                    <div class="trip-filter">
+                                    <div class="trip-filter active trip-filter__default">
                                         <button
-                                            class="btn dateprice-btn js-trip-filter__btn">Occupancy</button>
+                                            class="btn dateprice-btn trip-filter__btn js-trip-filter__btn" data-filter-val="Occupancy">Double occupancy</button>
                                         <div class="trip-filter__box js-trip-filter__box">
-                                            <button class="btn dateprice-btn trip-filter__box-btn js-trip-filter__box-btn">Double occupancy</button>
+                                            <button class="btn dateprice-btn trip-filter__box-btn js-trip-filter__box-btn active">Double occupancy</button>
                                             <button class="btn dateprice-btn trip-filter__box-btn js-trip-filter__box-btn">Single
                                                 occupancy(FREE)</button>
                                         </div>
                                     </div>
                                     <button class="btn dateprice-btn js-departing-city-filter-btn">Trip
                                         Extension</button>
-                                    <button class="btn dateprice-btn js-departing-city-filter-btn">Special
-                                        Departures</button>
+                                        <div class="trip-filter">
+                                            <button
+                                                class="btn dateprice-btn trip-filter__btn js-trip-filter__btn"  data-filter-val="Special Departures">Special Departures</button>
+                                            <div class="trip-filter__box js-trip-filter__box">
+                                                <button class="btn dateprice-btn trip-filter__box-btn js-trip-filter__box-btn">Festival Departure</button>
+                                                <button class="btn dateprice-btn trip-filter__box-btn js-trip-filter__box-btn">Women-only Departure</button>
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="departing-city-filter__right"><button class="btn dateprice-btn dark"><i
                                             class="fa fa-plane fa-2x" aria-hidden="true"></i> Departure City: <span

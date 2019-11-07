@@ -28,6 +28,23 @@
     position: relative;
     float: left;
     margin-right: 25px;
+    &.active{
+        .trip-filter__btn{
+            background-color: #BBBDBF;   
+            color: #fff;  
+        } 
+    }
+    &.open{
+        .trip-filter__box{
+            display: block;
+        }
+        &.active{
+               .trip-filter__btn{
+                background-color: #413F3F;
+                color: #fff;
+               } 
+            }
+    }
 }
 
 .trip-filter__box {

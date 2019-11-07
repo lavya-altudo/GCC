@@ -7251,6 +7251,17 @@ input[type="radio"] {
   float: left;
   margin-right: 25px;
 }
+.trip-filter.active .trip-filter__btn {
+  background-color: #BBBDBF;
+  color: #fff;
+}
+.trip-filter.open .trip-filter__box {
+  display: block;
+}
+.trip-filter.open.active .trip-filter__btn {
+  background-color: #413F3F;
+  color: #fff;
+}
 .trip-filter__box {
   border: 1px solid #979797;
   border-radius: 5px;
