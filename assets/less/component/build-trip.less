@@ -12,58 +12,82 @@
     }
 }
 .build-trip-nav{
-margin: 50px 45px 35px 45px;
+margin: 60px 45px 35px 45px;
 position: relative;
 font-size: 10px;
 font-weight: bold;
     
 }
 .build-trip-step{
-    z-index: 1000;
-    color:#fff;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 1.4em;
+    border: solid 4px #BBBDBF;
+    background-color: #fff;
+    z-index: 1;
+    color: #BBBDBF;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    font-size: 20px;
     text-align: center;
     position: absolute;
     margin-left: -15px;
-    background-color: #F1F1F2;;
     border-radius: 50%;
-    top: -10px;
+    top: -15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &.first{
+
+    &.first {
         left: 0;
     }
-    &.second{
+
+    &.second {
         left: 50%;
     }
-    &.third{
+
+    &.third {
         left: 100%;
     }
-    >i{
+
+    > i {
         position: absolute;
-        top: -30px;
-        font-size: 25px;
-        color: #F1F1F2;
+        top: -35px;
+        font-size: 28px;
+        color: #BBBDBF;
     }
-    .title{
-        width:200px;
+
+    .title {
+        width: 200px;
         font-weight: normal;
-        color: #F1F1F2;
+        color: #BBBDBF;
+        font-weight: bold;
+        font-size:15px;
+        line-height:15px;
+        margin-top: 10px;
     }
-    &.active{
-        background-color: #BBBDBF;
-        .title{
-            font-weight: bold;color: #BBBDBF;
+
+    &.active {
+        background-color: #413F3F;
+        border: 0;
+        line-height: 40px;
+        color: #fff;
+        .title {
+            color: #413F3F;
         }
-        >i{
-            color: #BBBDBF;
+
+        > i {
+            color: #413F3F;
         }
     }
-    &.complete{
-        background-color: #D1D3D5;
+
+    &.complete {
+        color: #413F3F;
+        border-color: #413F3F;
+        .title {
+            font-weight: normal;
+            color: #413F3F;
+        }
+        > i {
+            color: #413F3F;
+        }
     }
 }
