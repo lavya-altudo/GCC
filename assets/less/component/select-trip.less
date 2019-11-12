@@ -11,6 +11,7 @@
     float: left;
     >.btn {
         margin-right: 25px;
+        float:left;
     }
 }
 .departing-city-filter__right {
@@ -51,15 +52,22 @@
     border: 1px solid #979797;
     border-radius: 5px;
     background-color: #D8D8D8;
-    padding: 20px 5px 40px;
+    padding: 20px 25px 40px;
     position: absolute;
     width: max-content;
     top: 50px;
     display: none;
-
+    z-index: 1;
     &.active {
         display: block;
     }
+}
+.trip-filter__box--white{
+    background-color: #fff;
+}
+
+.trip-filter__box--650{
+    width:650px;
 }
 
 .trip-filter__box-btn {
@@ -70,7 +78,107 @@
     font-size: 14px;
     font-weight: bold;
     padding: 15px 25px;
-    margin: 0 20px;
+    margin-right: 20px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.trip-filter__select-all-btn{
+    .trip-filter__box-btn
+}
+
+.trip-filter__row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.trip-filter__row-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #BBBDBF;	border-radius: 2px;	background-color: #F1F1F2;
+    padding: 8px;
+    line-height: 20px;
+    width: 100%;
+    .divider{
+        margin: 0 10px;
+    }
+}
+
+.trip-filter__group{
+    margin-bottom: 20px;
+}
+
+.trip-filter__row-title {
+    display: flex;
+    margin-right: 10px;
+    width: 65%;
+    img{
+        border-radius: 4px;    margin-right: 10px;
+    }
+}
+
+.trip-filter__row-checkbox {
+    margin: 0 12px 0 0;
+    input{
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+}
+
+.trip-filter__row-title-name {
+    color: #413F3F;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.trip-filter__row-subtitle-name {
+    color: #413F3F;
+    font-size: 14px;
+    font-weight: 300;
+}
+.trip-filter__row-date {
+    border: 1px solid #979797;
+    background-color: #D8D8D8;
+    color: #413F3F;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 8px 15px;
+    min-width: 80px;
+}
+
+.trip-filter__row-prices-title{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    span {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .content {
+        max-width: 75px;
+        margin-right: 12px;
+    }
+}
+
+a.trip-filter__clear-btn,a.trip-filter__search-btn{
+    color: #BBBDBF;
+    font-size: 24px;
+    float: left;
+    &:hover,&:focus{
+        text-decoration: none;
+    }
+}
+a.trip-filter__search-btn{
+    float: right;
 }
 
 //select trip month row
