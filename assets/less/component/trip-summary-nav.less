@@ -1,79 +1,79 @@
 .summary-nav {
     background-color: #F1F1F2;
-}
-
-.summary-nav-header {
-    padding: 5px 15px;
     color: #413F3F;
-    font-size: 24px;
-    font-weight: bold;
-    border: 1px solid #979797;
+    padding-bottom: 20px;
+    .dateprice-btn {
+        float: right;
+    }
 }
 
-.summary-nav-subheader {
+.summary-nav__header {
+    padding: 5px 15px;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.summary-nav__subheader {
     background-color: #D1D3D5;
-    padding: 35px 15px;
+    padding: 20px 15px;
     line-height: 35px;
-    .year {
+
+    .summary-nav__year {
         color: #000000;
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .title {
-        color: #413F3F;
         font-size: 36px;
         font-weight: bold;
+        display: inline-block;
     }
-    .subtitle {
+
+    .summary-nav__title {
+
+        font-size: 36px;
+        font-weight: bold;
+        display: inline-block;
+
+    }
+
+    .summary-nav__subtitle {
         color: #000000;
         font-size: 24px;
         font-style: oblique;
         font-weight: 300;
+        line-height: 29px;
     }
 }
 
-.summary-nav-date-row {
+.summary-nav__date-row {
     >.row {
         padding: 20px 0;
         line-height: 20px;
         display: flex;
         align-items: center;
     }
-    .dateprice-btn {
-        width: 100%;
-    }
+
 }
 
-.summary-nav-disclaimer{
+.summary-nav__date-title {
     display: flex;
-    align-items: center;
-    background-color: #fff;
-    color: #BBBDBF;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 14px;
-    padding: 8px;
-    margin-bottom: 5px;
-    .divider{
-        margin:0 6px;
-    }
-}
+    line-height: 22px;
 
-.summary-nav-date-title{
-    display: flex;
-    color: #413F3F;	font-size: 24px;	font-weight: bold;	line-height: 29px;
-    .image{
-        max-width: 62px;
+    .image {
+        max-width: 50px;
         width: 100%;
     }
-    img{
+
+    img {
         max-width: 100%;
     }
-    .content{
+
+    .content {
         margin-left: 10px;
     }
 }
-.summary-nav-days{
+
+.summary-nav__days {
     font-size: 11px;
     line-height: 13px;
     text-align: center;
@@ -82,105 +82,141 @@
     margin-top: 3px;
 }
 
-.summary-nav-date-prices {
-    .summary-nav-row-prices
-}
-
-.summary-nav-info {
-    border: 1px solid #979797;
-}
-
-.summary-nav-row-heading {
-    font-size: 14px;
-    color: #BBBDBF;
-    margin: 15px 10px 0 10px;
-    span.bold {
-        font-weight: bold;
-    }
-    a{
-        color: #BBBDBF;
-        text-decoration: underline;
-        font-weight: 700;
-    }
-}
-
-.summary-nav-row {
-    >.row {
-        border: 1px solid #979797;
-        border-radius: 2px;
-        background-color: #D8D8D8;
-        padding: 9px 0;
-        margin: 5px 0 20px 0px;
-        line-height: 20px;
-        display: flex;
-        align-items: center;
-    }
-    .dateprice-btn{
-        width: 100%;
-    }
-}
-
-.summary-nav-row-title-container {
-    display: flex;
-    align-items: center;
-    img {
-        max-width: 60px;
-        margin-right: 10px;
-    }
-}
-
-.summary-nav-row-title {
-    color: #413F3F;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.summary-nav-row-subtitle {
-    font-size: 14px;
-}
-
-.summary-nav-row-date {
-    display: inline-block;
-    font-size: 11px;
-    line-height: 13px;
-    text-align: center;
-    padding: 0 10px;
-    border: 1px solid #979797;
-}
-
-.summary-nav-row-prices {
+.summary-nav__date-prices {
     display: flex;
     align-items: center;
     font-size: 14px;
     font-weight: 300;
     position: relative;
     flex-flow: wrap;
-    max-width: 100px;
+    justify-content: center;
+    float: right;
+
     span {
         display: block;
         font-size: 24px;
     }
+
     .content {
         max-width: 75px;
         margin-right: 12px;
     }
 }
 
-.summary-nav-total-container{
-margin-top: 20px;
+.summary-nav__info-header {
+    background-color: #D8D8D8;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.summary-nav-dropdown{
-    color: #BBBDBF;	margin-left: 15px;	font-size: 14px;	font-weight: 300;
+.summary-nav__row {
+    >.row {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 15px 0;
+        border-bottom: 1px solid #BBBDBF;
+    }
 }
 
-.summary-nav-total{
+.summary-nav__row-title-container {
+    display: flex;
+    align-items: center;
+
+    .fa {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+}
+
+.summary-nav__row-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.summary-nav__row-subtitle {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.summary-nav__row-date {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    padding: 0 10px;
+    border: 1px solid #979797;
+    background-color: #D8D8D8;
+}
+
+.summary-nav__row-prices {
+    .summary-nav__date-prices
+}
+
+.summary-nav__credits-row {
+    background-color: #D1D3D5;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.summary-nav__credits-row-price {
+    font-size: 24px;
+}
+
+.summary-nav__disclaimer {
+    background-color: #D8D8D8;
+    margin: 10px 0;
+
+}
+
+.summary-nav__disclaimer-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px;
+    margin: 5px 0;
+    color: #BBBDBF;
+    font-size: 12px;
+    .content{
+        color: #413F3F;	font-size: 14px;	font-weight: bold;
+    }
+    .divider {
+        margin: 0 6px;
+        background-color: #B7BBBF;
+    }
+}
+
+.summary-nav__disclaimer-note {
+    font-size: 8px;
+    color: #BBBDBF;
+    span.bold{
+        color: #413F3F;
+    }
+}
+
+.summary-nav__total-container {
+    margin-top: 20px;
+}
+
+.summary-nav__dropdown {
+    color: #BBBDBF;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 300;
+
+    i {
+        vertical-align: top;
+    }
+}
+
+.summary-nav__total {
     display: flex;
     align-items: center;
     border: 1px solid #979797;
 }
 
-.summary-nav-total-title{
+.summary-nav__total-title {
     color: #000000;
     font-size: 24px;
     font-weight: bold;
@@ -192,15 +228,18 @@ margin-top: 20px;
     padding: 0 15px;
 }
 
-.summary-nav-total-price{
-    color: #413F3F;
+.summary-nav__total-price {
+
     font-size: 14px;
     background-color: #BBBDBF;
     font-weight: 300;
     padding: 13px 15px;
     text-align: center;
-    min-width: 170px;
-    span{
-        font-size: 32px; display: block;line-height: 25px;
+    min-width: 60%;
+
+    span {
+        font-size: 32px;
+        display: block;
+        line-height: 25px;
     }
 }
