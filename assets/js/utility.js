@@ -46,6 +46,14 @@ $(function () {
 
 
   if ($('.trip-filter__group').length > 0) {
+    function parentActivator(__this) {
+      if (Array.prototype.slice.call($('.trip-filter__group').find('input[type=checkbox]'), 0).filter(function (d) { return d.checked }).length > 0) {
+          __this.closest('.js-trip-filter').addClass('active');
+      } else {
+          __this.closest('.js-trip-filter').removeClass('active');
+      }
+
+  }
     function clearCheckbox(__this) {
       if (__this != null) {
         __this.parents('.trip-filter__group').find('input[type=checkbox]').prop("checked", false);
@@ -72,17 +80,19 @@ $(function () {
         $(this).addClass('active');
         $(this).parents('.trip-filter__group').find('.trip-filter__row').addClass('active');
       }
-
+      parentActivator($(this));
     });
 
     $('.trip-filter__group').find('input[type=checkbox]').on('click', function () {
       $(this).prop('checked') == true ? $(this).parents('.trip-filter__row').addClass('active') : $(this).parents('.trip-filter__row').removeClass('active');
       var button = $(this).parents('.trip-filter__group').find('.js-trip-filter__select-all-btn');
       selectAllButtonValidator($(this)) ? button.addClass('active') : button.removeClass('active');
+      parentActivator($(this));
     })
 
     $('.js-trip-filter__clear-btn').on('click', function () {
       clearCheckbox(null);
+      parentActivator($(this));
     })
   }
 
