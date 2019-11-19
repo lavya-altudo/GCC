@@ -47,13 +47,18 @@ $(function () {
 
   if ($('.trip-filter__group').length > 0) {
     function parentActivator(__this) {
-      if (Array.prototype.slice.call($('.trip-filter__group').find('input[type=checkbox]'), 0).filter(function (d) { return d.checked }).length > 0) {
-          __this.closest('.js-trip-filter').addClass('active');
+      let $thisFilterContainer = __this.closest(".trip-filter");
+      let $thisMainFilter = __this.closest(".trip-filter").find(".js-trip-filter__btn");
+      let checkedboxCount = Array.prototype.slice.call($('.trip-filter__group').find('input[type=checkbox]'), 0).filter(function (d) { return d.checked }).length;
+      if (checkedboxCount > 0) {
+        $thisFilterContainer.addClass('active');
+        $thisMainFilter.text($thisMainFilter.attr("data-filter-val")+" ("+ checkedboxCount+")");
       } else {
-          __this.closest('.js-trip-filter').removeClass('active');
-      }
+        $thisFilterContainer.removeClass('active');
+        $thisMainFilter.text($thisMainFilter.attr("data-filter-val"));
 
-  }
+      }
+    }
     function clearCheckbox(__this) {
       if (__this != null) {
         __this.parents('.trip-filter__group').find('input[type=checkbox]').prop("checked", false);
