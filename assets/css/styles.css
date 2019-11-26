@@ -6896,6 +6896,30 @@ a.dateprice-call-btn {
   background-color: #fff;
   opacity: 1;
 }
+.sign-in__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px dashed #979797;
+  background-color: rgba(255, 255, 255, 0.97);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.sign-in__info {
+  color: #413F3F;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.sign-in__info i {
+  color: #BBBDBF;
+}
 body {
   font-family: sans-serif;
   font-size: 14px;
@@ -7041,6 +7065,15 @@ input[type="radio"] {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.fl-l {
+  float: left;
+}
+.fl-r {
+  float: right;
+}
+.fl-n {
+  float: none;
 }
 .font-size-scroll-component {
   color: #000000;
@@ -7848,9 +7881,6 @@ a.trip-filter__search-btn {
   color: #413F3F;
   padding-bottom: 20px;
 }
-.summary-nav .dateprice-btn {
-  float: right;
-}
 .summary-nav__header {
   padding: 5px 15px;
   font-family: Helvetica;
@@ -7932,6 +7962,9 @@ a.trip-filter__search-btn {
   background-color: #D8D8D8;
   font-size: 14px;
   font-weight: bold;
+}
+.summary-nav__row {
+  position: relative;
 }
 .summary-nav__row > .row {
   display: flex;

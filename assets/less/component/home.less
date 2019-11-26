@@ -23,6 +23,7 @@ h1 {
 h2 {
     font-size: 32;
     margin: 1.5em 0;
+
     h1+& {
         margin: 0 0 1em;
     }
@@ -31,6 +32,7 @@ h2 {
 h3 {
     font-size: 28;
     margin: 1em 0;
+
     h2+& {
         margin: 0 0 1em;
     }
@@ -104,15 +106,18 @@ input[type="radio"] {
     min-height: 1px;
     width: 100%;
     margin: 0 auto;
+
     &:after {
         content: "";
         display: table;
         clear: both;
     }
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
+
 .l-col,
 [class*=col-] {
     float: left;
@@ -174,7 +179,19 @@ input[type="radio"] {
     list-style: none;
 }
 
-.custom-scroll-bar (@scroll-width: 8px;) {
+.fl-l {
+    float: left
+}
+
+.fl-r {
+    float: right
+}
+
+.fl-n {
+    float: none
+}
+
+.custom-scroll-bar (@scroll-width: 8px; ) {
     padding-right: @scroll-width * 2;
     overflow: hidden;
     overflow-y: auto;
@@ -187,7 +204,7 @@ input[type="radio"] {
 
     &::-webkit-scrollbar-thumb {
         border-radius: 8px;
-        background-color: rgba(0,0,0,.5);
-        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.25);
+        background-color: rgba(0, 0, 0, .5);
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .25);
     }
 }
