@@ -7075,6 +7075,9 @@ input[type="radio"] {
 .fl-n {
   float: none;
 }
+.display-block {
+  display: inline-block;
+}
 .font-size-scroll-component {
   color: #000000;
   font-family: "Source Sans Pro";
@@ -7896,12 +7899,14 @@ a.trip-filter__search-btn {
   color: #000000;
   font-size: 36px;
   font-weight: bold;
-  display: inline-block;
+}
+.summary-nav__subheader .summary-nav__year--small {
+  color: #413F3F;
+  font-size: 18px;
 }
 .summary-nav__subheader .summary-nav__title {
   font-size: 36px;
   font-weight: bold;
-  display: inline-block;
 }
 .summary-nav__subheader .summary-nav__subtitle {
   color: #000000;
@@ -7931,6 +7936,12 @@ a.trip-filter__search-btn {
 }
 .summary-nav__date-title .content {
   margin-left: 10px;
+}
+.summary-nav__top-title,
+.summary-nav__bottom-title {
+  color: #413F3F;
+  font-size: 14px;
+  font-weight: 300;
 }
 .summary-nav__days {
   font-size: 11px;
@@ -8024,6 +8035,7 @@ a.trip-filter__search-btn {
 }
 .summary-nav__credits-row-price {
   font-size: 24px;
+  float: right;
 }
 .summary-nav__disclaimer {
   background-color: #D8D8D8;
@@ -8083,6 +8095,12 @@ a.trip-filter__search-btn {
   line-height: 10px;
   color: #413F3F;
 }
+.summary-nav__info-title {
+  background-color: #F0F0F0;
+  color: #BBBDBF;
+  font-size: 14px;
+  padding: 0 10px;
+}
 .summary-nav__total {
   display: flex;
   align-items: center;
@@ -8111,6 +8129,32 @@ a.trip-filter__search-btn {
   font-size: 32px;
   display: block;
   line-height: 25px;
+}
+.summary-nav__total-price--small {
+  min-width: 40%;
+}
+.summary-nav__subtotal {
+  display: flex;
+  align-items: center;
+}
+.summary-nav__subtotal-title {
+  color: #413F3F;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #D1D3D5;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+  padding: 0 15px;
+}
+.summary-nav__subtotal-price {
+  font-size: 24px;
+  background-color: #BBBDBF;
+  font-weight: 300;
+  padding: 13px 15px;
+  text-align: center;
+  min-width: 44%;
 }
 .dateprice-footer {
   padding: 40px 0;
