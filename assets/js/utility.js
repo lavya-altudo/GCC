@@ -100,5 +100,8 @@ $(function () {
       parentActivator($(this));
     })
   }
-
+  
+  $('.js-payby-select__toggle').on('click', function () {
+    $(this).closest(".summary-nav__row").find(".payby-select").toggleClass("open");
+  })
 });

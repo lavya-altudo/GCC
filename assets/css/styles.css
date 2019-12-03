@@ -8156,6 +8156,31 @@ a.trip-filter__search-btn {
   text-align: center;
   min-width: 44%;
 }
+.payby-select {
+  position: relative;
+}
+.payby-select .summary-nav__row-date {
+  cursor: pointer;
+  user-select: none;
+}
+.payby-select.open .payby-select__list {
+  display: block;
+}
+.payby-select__list {
+  padding: 10px 20px 30px 10px;
+  list-style: none;
+  border: 1px solid #D0D2D3;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 1;
+  background: #ffffff;
+  width: max-content;
+  display: none;
+}
+.payby-select__list-item {
+  margin-bottom: 3px;
+  cursor: pointer;
+}
 .dateprice-footer {
   padding: 40px 0;
 }
@@ -8388,4 +8413,30 @@ a.trip-filter__search-btn {
 }
 .btn-learn-more-popup {
   width: 100%;
+}
+.message-box {
+  border: 15px solid #D8D8D8;
+  padding: 18px;
+  color: #413F3F;
+  text-align: center;
+}
+.message-box__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.message-box__subtitle {
+  font-size: 18px;
+}
+.message-box__info {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.message-box__code {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 24px;
+}
+.message-box__disclaimer {
+  font-size: 8px;
+  margin-top: 15px;
 }

@@ -310,3 +310,32 @@
     text-align: center;
     min-width: 44%;
 }
+
+.payby-select{
+    position: relative;
+    .summary-nav__row-date{
+        cursor: pointer;user-select: none;
+    }
+    &.open{
+        .payby-select__list{
+            display: block;
+        }
+    }
+}
+
+.payby-select__list{
+    padding: 10px 20px 30px 10px;
+    list-style: none;
+    border: 1px solid #D0D2D3;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    background: #ffffff;
+    width: max-content;
+    display: none;
+}
+
+.payby-select__list-item{
+    margin-bottom: 3px;
+    cursor: pointer;
+}
