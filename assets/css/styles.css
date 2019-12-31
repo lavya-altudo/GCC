@@ -6887,14 +6887,15 @@ a.dateprice-call-btn {
   background-color: #413F3F;
 }
 .modal-temp {
-  width: 1075px;
+  width: 700px;
   margin: 0 auto;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   opacity: 1;
+  margin-bottom: 50px;
 }
 .sign-in__box {
   position: absolute;
@@ -8346,73 +8347,87 @@ a.trip-filter__search-btn {
   font-size: 14px;
   font-weight: 300;
 }
-.trip-details-popup {
+.extension-modal {
   padding: 20px 70px;
 }
-.trip-details-popup-header {
-  color: #413F3F;
-  font-size: 36px;
-  font-weight: bold;
+.extension-modal__header {
   display: flex;
-  margin: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
 }
-.trip-details-popup-header .required-ext-box {
-  margin: 0 auto 0 10px;
-}
-.trip-popup-row > .row {
-  background-color: #BBBDBF;
-  padding: 20px 10px;
-}
-.trip-popup-title {
-  color: #000000;
+.extension-modal__header-title {
   font-size: 24px;
-  font-style: oblique;
-  font-weight: 300;
-  line-height: 23px;
-}
-.trip-popup-title span {
-  color: #413F3F;
-  font-size: 22px;
-  display: block;
-}
-.trip-popup-title .year {
-  color: #413F3F;
-  font-size: 16px;
   font-weight: bold;
+  color: #333333;
+  line-height: 31px;
 }
-.trip-popup-price {
-  text-align: center;
-  width: max-content;
-  margin: 0 0 0 auto;
+.extension-modal__icon-location {
+  color: #9E1C1C;
+  margin-right: 10px;
 }
-.trip-popup-price .content {
-  color: #413F3F;
-  font-size: 16px;
-}
-.trip-popup-price .content span {
-  display: block;
-}
-.trip-popup-price-days {
-  font-size: 11px;
+.required-extension-box {
+  border: 1px solid #725D2C;
+  background-color: #F8F4EC;
+  color: #725D2C;
+  padding: 6px 8px;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 13px;
+  line-height: 16px;
+  display: flex;
+  width: 122px;
+}
+.required-extension-box-icon {
+  margin-right: 8px;
+  align-self: center;
+  font-size: 30px;
+  color: #A89154;
+}
+.extension-modal__row {
+  display: flex;
+  padding: 14px 17px;
+  align-items: center;
+  border: 1px solid #444444;
+}
+.extension-modal__row-title {
+  flex-basis: calc(100% - 105px);
+  color: #9E1C20;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 31px;
+  padding-right: 20px;
+}
+.extension-modal__row-info {
+  border-left: solid 1px #666666;
+  flex-basis: 105px;
+  padding: 10px 0 10px 15px;
   text-align: center;
-  border: 1px solid #979797;
-  background-color: #D8D8D8;
-  margin: 3px auto 0 auto;
-  width: max-content;
-  padding: 1px 10px;
 }
-.trip-popup-row-detail img {
-  width: 100%;
+.extension-modal__row-days {
+  color: #333333;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
 }
-.trip-popup-description {
-  color: #413F3F;
+.extension-modal__icon-moon {
+  margin-right: 5px;
+}
+.extension-modal__row-price {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+.extension-modal__row-price-number {
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+  line-height: 30px;
+}
+.extension-modal__description {
+  color: #333333;
   font-size: 18px;
-  margin: 20px 0;
-}
-.btn-learn-more-popup {
-  width: 100%;
+  line-height: 27px;
+  padding: 16px 0;
 }
 .message-box {
   border: 15px solid #D8D8D8;
